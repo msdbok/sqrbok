@@ -17,6 +17,8 @@ permalink: /assignment/
 * Submit your paper by issuing a **Pull Request**.
 * Copy the link to your **Pull Request** and submit it on Moodle.
 
+>💡 **Note**: the MSDBOK GitHub repository is [here](https://github.com/msdbok/msdbok.github.io)
+
 ## Getting Feedback 💬
 
 * **Feedback** will be provided by MSDBOK admins (instructors and teaching assistants) through comments on your **Pull Request**.
