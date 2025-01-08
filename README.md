@@ -16,13 +16,13 @@ This resource aims to provide a comprehensive overview of key topics, combining 
 
 Below is a visual overview of the key topics covered in this repository:
 
-![Overview of Topics](_images/overview.png)  
+![Overview of Topics](images/overview.png)  
 
 ---
 
 ## 📂 Areas Covered  
 
-### 1. [Defining Quality](/definition/) 👥  
+### 1. [Defining Quality](/sqrbok/definition/) 👥  
 Understand the essence of software quality:  
 - Quality views and perspectives  
 - Quality models and metrics  
@@ -30,7 +30,7 @@ Understand the essence of software quality:
 
 ---
 
-### 2. [Organizing Quality](/organization/) 🔄  
+### 2. [Organizing Quality](/sqrbok/organization/) 🔄  
 Explore how to manage and assure quality effectively:  
 - The cost of quality  
 - Project-level quality management  
@@ -39,7 +39,7 @@ Explore how to manage and assure quality effectively:
 
 ---
 
-### 3. [Verification](/verification/) 📏  
+### 3. [Verification](/sqrbok/verification/) 📏  
 Learn methods to ensure software reliability and correctness:  
 - Functional testing (Black Box testing)  
 - Structural testing (White Box testing)  
@@ -47,7 +47,7 @@ Learn methods to ensure software reliability and correctness:
 
 ---
 
-### 4. [Quality Properties](/properties/) 🧩  
+### 4. [Quality Properties](/sqrbok/properties/) 🧩  
 Dive into key software quality attributes:  
 - Maintainability  
 - Reliability  
@@ -56,7 +56,7 @@ Dive into key software quality attributes:
 
 ---
 
-### 5. [Selected Materials](/material/) 📚  
+### 5. [Selected Materials](/sqrbok/material/) 📚  
 Access curated references and resources:  
 - Books  
 - Research papers  
@@ -66,7 +66,7 @@ Access curated references and resources:
 
 ## 🛠️ Resources  
 
-- **Contribution Template**: [Get started with the contribution template](/template/)  
+- **Contribution Template**: [Get started with the contribution template](/sqrbok/template/)  
   Help us improve these notes by following the provided contribution guidelines.
 
 ---
