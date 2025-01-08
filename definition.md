@@ -6,8 +6,7 @@ permalink: /definition/
 collection: definition
 ---
 
-Examples:
-* Estimation methods
-* Milestone planning
-* Activities planning
-* Prioritization
+Understand the essence of software quality:  
+- Quality views and perspectives  
+- Quality models and metrics  
+- Evaluating the adequacy of quality measures
