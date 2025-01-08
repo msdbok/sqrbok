@@ -1,12 +1,12 @@
 - title: Home
   url: /
-- title: People and Teams
-  url: /people/
-- title: Process
-  url: /process/
-- title: Scope
-  url: /scope/
-- title: Planning
-  url: /planning/
+- title: Defining Quality
+  url: /definition/
+- title: Quality Organization
+  url: /organization/
+- title: Verification
+  url: /verification/
+- title: Quality Properties
+  url: /properties/
 - title: Search
   url: /search/
