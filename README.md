@@ -5,7 +5,7 @@ layout: page
 permalink: /
 ---
 
-**Software Quality and Realiblity. Course Notes 📘**
+[//]: # **Software Quality and Realiblity. Course Notes 📘**
 
 Presents course notes for the course Software Quality and Reliability (and sometimes Security)
 
