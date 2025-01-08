@@ -1,9 +1,9 @@
 ---
-title: Planning management-related papers
+title: Organizing Quality
 layout: collection
 show_excerpts: false
-permalink: /planning/
-collection: planning
+permalink: /organization/
+collection: organization
 ---
 
 Examples:

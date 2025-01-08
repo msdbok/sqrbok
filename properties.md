@@ -1,9 +1,9 @@
 ---
-title: Scope management-related papers
+title: Quality Properties
 layout: collection
 show_excerpts: false
-permalink: /scope/
-collection: scope
+permalink: /properties/
+collection: properties
 ---
 
 # Papers about Scope Management in Software Development

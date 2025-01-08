@@ -1,9 +1,9 @@
 ---
-title: Process papers
+title: Verification Methods
 layout: collection
 show_excerpts: false
-permalink: /process/
-collection: process
+permalink: /verification/
+collection: verification
 ---
 
 # Papers about Processes for Software Development
