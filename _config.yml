@@ -7,8 +7,8 @@ plugins:
   - jekyll-scholar
 
 repository: msdbok/msdbok.github.io
-title: Managing Software Development Body of Knowledge
-description: Review of the research in software development management
+title: Software Quality and Reliability Body of Knowledge
+description: Course notes on software quality assurance and management
 
 
 collections:
