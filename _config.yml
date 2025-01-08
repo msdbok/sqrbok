@@ -12,13 +12,13 @@ description: Review of the research in software development management
 
 
 collections:
-  people:
+  definition:
     output: true
-  process:
+  oranization:
     output: true
-  scope:
+  verification:
     output: true
-  planning:
+  properties:
     output: true
 
 
