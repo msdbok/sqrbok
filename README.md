@@ -1,35 +1,72 @@
 ---
-title: Software Quality and Reliability. Course Notes 📘
+title: Software Quality and Reliability Course Notes 📘
 author: Andrey Sadovykh
 layout: page
 permalink: /
 ---
 
-[//]: # (**Software Quality and Realiblity. Course Notes 📘**)
+# Software Quality and Reliability 📘
 
-Presents course notes for the course Software Quality and Reliability (and sometimes Security)
+Welcome to the course notes repository for **Software Quality and Reliability** (with occasional insights on Security). This resource aims to provide a comprehensive overview of key topics, combining theoretical foundations with practical applications. Whether you're a student, professional, or curious learner, these notes are here to guide you.
 
-## Areas Covered 📝
+## 📂 Areas Covered  
 
-1. [Defining Quality](/definition/) 👥  
-   Quality views, Quality models, Metrics, Measuring adequacy of Quality Measures
-
-2. [Organizing Quality](/organization/) 🔄  
-   Notes on Organizing quality assurance. Cost of quality, Project quality, Quality processes, Organizational Quality. Software quality in organizations.
-
-3. [Verification](/verification/) 📏  
-   Understand scope management techniques and how defining and controlling scope affects project success.
-
-4. [Quality Properties](/properties/) 🗓️  
-   Notes on Maintainability, Reliability, Security, Usability.
-
-4. [Selected Materials](/material/) 🗓️  
-   References and reviews on Books, Papers, Guides and courses.
-
-## Resources 🛠️
-
-* **Contribution Template**: [Check the template for a contribution](/template/)
+### 1. [Defining Quality](/definition/) 👥  
+Understand the essence of software quality:  
+- Quality views and perspectives  
+- Quality models and metrics  
+- Evaluating the adequacy of quality measures  
 
 ---
 
-These course notes are aimed at providing a comprehensive view of software quality topics and equipping readers with practical and theoretical insights
+### 2. [Organizing Quality](/organization/) 🔄  
+Explore how to manage and assure quality effectively:  
+- The cost of quality  
+- Project-level quality management  
+- Quality processes in organizations  
+- Organizational strategies for software quality  
+
+---
+
+### 3. [Verification](/verification/) 📏  
+Learn methods to ensure software reliability and correctness:  
+- Functional testing (Black Box testing)  
+- Structural testing (White Box testing)  
+- Static analysis techniques  
+
+---
+
+### 4. [Quality Properties](/properties/) 🧩  
+Dive into key software quality attributes:  
+- Maintainability  
+- Reliability  
+- Security  
+- Usability  
+
+---
+
+### 5. [Selected Materials](/material/) 📚  
+Access curated references and resources:  
+- Books  
+- Research papers  
+- Guides and online courses  
+
+---
+
+## 🛠️ Resources  
+
+- **Contribution Template**: [Get started with the contribution template](/template/)  
+  Help us improve these notes by following the provided contribution guidelines.
+
+---
+
+### 🎯 Objective  
+
+These course notes aim to:  
+- Provide a structured and accessible overview of software quality and reliability topics.  
+- Equip readers with insights that bridge theoretical concepts and real-world applications.  
+- Encourage collaboration and knowledge-sharing within the community.
+
+---
+
+Feel free to explore, contribute, and enhance your understanding of software quality and reliability!
