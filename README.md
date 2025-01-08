@@ -5,31 +5,30 @@ layout: page
 permalink: /
 ---
 
-[//]: # **Software Quality and Realiblity. Course Notes 📘**
+[//]: # (**Software Quality and Realiblity. Course Notes 📘**)
 
 Presents course notes for the course Software Quality and Reliability (and sometimes Security)
 
-## Topics Covered 📝
+## Areas Covered 📝
 
 1. [Defining Quality](/definition/) 👥  
    Quality views, Quality models, Metrics, Measuring adequacy of Quality Measures
 
 2. [Organizing Quality](/organization/) 🔄  
-   Organizing quality assurance. Cost of quality, Project quality, Quality processes, Organizational Quality. Software quality in organizations.
+   Notes on Organizing quality assurance. Cost of quality, Project quality, Quality processes, Organizational Quality. Software quality in organizations.
 
 3. [Verification](/verification/) 📏  
    Understand scope management techniques and how defining and controlling scope affects project success.
 
-4. [Quality Properties](/planning/) 🗓️  
-   Material on Maintainability, Reliability, Security, Usability.
+4. [Quality Properties](/properties/) 🗓️  
+   Notes on Maintainability, Reliability, Security, Usability.
 
-4. [Selected Material](/material/) 🗓️  
+4. [Selected Materials](/material/) 🗓️  
    References and reviews on Books, Papers, Guides and courses.
 
 ## Resources 🛠️
 
-* **Instructions for the MSD Paper**: [Read the full MSD paper instructions](/assignment/)
-* **Article Template**: [Check the MSD article template](/template/)
+* **Contribution Template**: [Check the template for a contribution](/template/)
 
 ---
 

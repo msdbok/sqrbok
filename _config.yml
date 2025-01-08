@@ -20,6 +20,8 @@ collections:
     output: true
   properties:
     output: true
+  material:
+    output: true
 
 
 scholar:
