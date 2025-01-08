@@ -1,5 +1,5 @@
 ---
-title: Software Quality and Reliability Homepage
+title: Software Quality and Reliability. Course Notes 📘
 author: Andrey Sadovykh
 layout: page
 permalink: /
