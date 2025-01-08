@@ -2,8 +2,8 @@
 title: Quality Properties
 layout: collection
 show_excerpts: false
-permalink: /properties/
-collection: properties
+permalink: /attributes/
+collection: attributes
 ---
 
 Dive into key software quality attributes:  

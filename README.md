@@ -47,7 +47,7 @@ Learn methods to ensure software reliability and correctness:
 
 ---
 
-### 4. [Quality Properties](/sqrbok/properties/) 🧩  
+### 4. [Quality Attributes](/sqrbok/attributes/) 🧩  
 Dive into key software quality attributes:  
 - Maintainability  
 - Reliability  
