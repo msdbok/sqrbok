@@ -6,7 +6,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-scholar
 
-repository: msdbok/msdbok.github.io
+repository: msdbok/sqrbok
 title: Software Quality and Reliability Body of Knowledge
 description: Course notes on software quality assurance and management
 
