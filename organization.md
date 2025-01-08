@@ -6,8 +6,8 @@ permalink: /organization/
 collection: organization
 ---
 
-Examples:
-* Estimation methods
-* Milestone planning
-* Activities planning
-* Prioritization
+Explore how to manage and assure quality effectively:  
+- The cost of quality  
+- Project-level quality management  
+- Quality processes in organizations  
+- Organizational strategies for software quality  

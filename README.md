@@ -10,6 +10,16 @@ permalink: /
 Welcome to the course notes repository for **Software Quality and Reliability** (with occasional insights on Security and other properties). 
 This resource aims to provide a comprehensive overview of key topics, combining theoretical foundations with practical applications. Whether you're a student, professional, or curious learner, these notes are here to guide you.
 
+---
+
+## 📊 Overview  
+
+Below is a visual overview of the key topics covered in this repository:
+
+![Overview of Topics](_images/overview.png)  
+
+---
+
 ## 📂 Areas Covered  
 
 ### 1. [Defining Quality](/definition/) 👥  

@@ -6,4 +6,7 @@ permalink: /verification/
 collection: verification
 ---
 
-# Papers about Processes for Software Development
+Learn methods to ensure software reliability and correctness:  
+- Functional testing (Black Box testing)  
+- Structural testing (White Box testing)  
+- Static analysis techniques  
