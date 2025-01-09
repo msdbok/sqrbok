@@ -4,9 +4,9 @@
   url: /definition/
 - title: Quality Organization
   url: /organization/
-- title: Verification
+- title: Verification and Validation
   url: /verification/
-- title: Quality Properties
-  url: /properties/
+- title: Quality Attributes
+  url: /attributes/
 - title: Search
   url: /search/
