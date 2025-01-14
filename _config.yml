@@ -11,7 +11,7 @@ repository: msdbok/sqrbok
 title: Software Quality and Reliability Body of Knowledge
 description: Course notes on software quality assurance and management
 mermaid:
-  src: 'https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js'
+  src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
   # src_config: '/js/mermaid_config.js'
 
 collections:
