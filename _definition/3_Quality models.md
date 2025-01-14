@@ -38,6 +38,33 @@ flowchart LR
   D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
 {% endmermaid %}
 
+<div class="mermaid">
+flowchart LR
+  A[McCall's Quality Factors]
+  A --> B[Product Operation 📊]
+  A --> C[Product Revision 🔧]
+  A --> D[Product Transition 🌐]
+
+  B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
+  C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
+  D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
+</div>
+
+```mermaid
+flowchart LR
+  A[McCall's Quality Factors]
+  A --> B[Product Operation 📊]
+  A --> C[Product Revision 🔧]
+  A --> D[Product Transition 🌐]
+
+  B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
+  C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
+  D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
+```
+
+
+
+
 | **Factor**                     | **Description**                                                                                       | **Sub-Characteristics**                                       |
 |---------------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | **Product Operation** 📊       | Related to the system's performance during operation and how well it meets the user's needs.           | Correctness ✅, Reliability 🔒, Efficiency ⚡, Integrity 🔐, Usability 🖥️ |
