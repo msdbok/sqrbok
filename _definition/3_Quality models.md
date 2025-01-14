@@ -3,6 +3,7 @@ title: 3. Quality Models Overview
 category: definition
 author: Andrey Sadovykh
 layout: page
+mermaid: true
 ---
 
 # Quality Dimensions by David A. Garvin (1984)
