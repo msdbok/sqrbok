@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'faraday-retry'
   gem 'kramdown-parser-gfm'
   gem 'webrick'
+  gem "jekyll-mermaid"
 end
