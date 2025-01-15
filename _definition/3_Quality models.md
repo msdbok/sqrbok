@@ -156,10 +156,8 @@ flowchart LR
 
 ISO/IEC 25002:2024 builds on the previous work in quality models, particularly ISO/IEC 25010 (which defines product quality characteristics), but offers a more comprehensive overview for different contexts. The standard provides an organized structure for understanding and evaluating quality across systems, software, and IT services. Here are the primary quality attributes within the model:
 
-![ISO/IEC 25002:2024](25002.png)
-
 {% mermaid %}
-flowchart TD
+flowchart LR
   A[ISO/IEC 25002:2024 Quality Model]
   
   A --> B[Functional Suitability ✅]
