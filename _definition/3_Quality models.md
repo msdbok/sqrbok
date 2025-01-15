@@ -270,6 +270,42 @@ flowchart LR
 ---
 # Comparing Quality Models
 
+{% mermaid %}
+
+graph TD
+  A[Garvin's Quality Dimensions]
+  B[McCall's Quality Factors]
+  C[ISO 9126 Quality Characteristics]
+
+  A1[Performance] --> B1[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B1 --> C1[Functionality:<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
+
+  A2[Features] --> B2[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B2 --> C2[Functionality:<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
+
+  A3[Reliability] --> B3[Product Operation (Functional):<br>Maturity, Fault Tolerance, Recoverability]
+  B3 --> C3[Reliability:<br>Maturity, Fault Tolerance, Recoverability]
+
+  A4[Conformance] --> B4[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B4 --> C4[Functionality:<br>Compliance]
+
+  A5[Durability] --> B5[Product Revision (Maintainability):<br>Maintainability, Flexibility, Testability]
+  B5 --> C5[Maintainability:<br>Analyzability, Changeability, Stability, Testability]
+
+  A6[Serviceability] --> B6[Product Revision (Maintainability):<br>Maintainability, Flexibility, Testability]
+  B6 --> C6[Maintainability:<br>Analyzability, Changeability, Stability, Testability]
+
+  A7[Aesthetics] --> B7[Product Operation (Functional):<br>Usability]
+  B7 --> C7[Usability:<br>Understandability, Learnability,<br>Operability, Attractiveness]
+
+  A8[Perceived Quality] --> B8[Product Transition (Adaptability):<br>Portability, Reusability, Interoperability]
+  B8 --> C8[Portability:<br>Adaptability, Installability,<br>Co-existence, Replaceability]
+
+  A9[Efficiency] --> B9[Product Operation (Functional):<br>Efficiency]
+  B9 --> C9[Efficiency:<br>Time Behavior, Resource Utilization,<br>Capacity]
+
+{% endmermaid %}
+
 | **Garvin's Quality Dimensions** | **McCall's Quality Factors**           | **ISO 9126 Quality Characteristics**      |
 |---------------------------------|---------------------------------------|------------------------------------------|
 | **Performance**                  | **Product Operation (Functional)**   | **Functionality**                        |
