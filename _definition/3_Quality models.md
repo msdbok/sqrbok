@@ -271,7 +271,6 @@ flowchart LR
 # Comparing Quality Models
 
 {% mermaid %}
-
 graph TD
   A[Garvin's Quality Dimensions]
   B[McCall's Quality Factors]
@@ -303,7 +302,6 @@ graph TD
 
   A9[Efficiency] --> B9[Product Operation (Functional):<br>Efficiency]
   B9 --> C9[Efficiency:<br>Time Behavior, Resource Utilization,<br>Capacity]
-
 {% endmermaid %}
 
 | **Garvin's Quality Dimensions** | **McCall's Quality Factors**           | **ISO 9126 Quality Characteristics**      |
