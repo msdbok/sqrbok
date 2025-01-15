@@ -3,7 +3,6 @@ title: 3. Quality Models Overview
 category: definition
 author: Andrey Sadovykh
 layout: page
-mermaid: true
 ---
 
 # Quality Dimensions by David A. Garvin (1984)
@@ -38,32 +37,6 @@ flowchart LR
   C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
   D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
 {% endmermaid %}
-
-<div class="mermaid">
-flowchart LR
-  A[McCall's Quality Factors]
-  A --> B[Product Operation 📊]
-  A --> C[Product Revision 🔧]
-  A --> D[Product Transition 🌐]
-
-  B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
-  C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
-  D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
-</div>
-
-```mermaid
-flowchart LR
-  A[McCall's Quality Factors]
-  A --> B[Product Operation 📊]
-  A --> C[Product Revision 🔧]
-  A --> D[Product Transition 🌐]
-
-  B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
-  C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
-  D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
-```
-
-
 
 
 | **Factor**                     | **Description**                                                                                       | **Sub-Characteristics**                                       |
@@ -184,6 +157,30 @@ flowchart LR
 ISO/IEC 25002:2024 builds on the previous work in quality models, particularly ISO/IEC 25010 (which defines product quality characteristics), but offers a more comprehensive overview for different contexts. The standard provides an organized structure for understanding and evaluating quality across systems, software, and IT services. Here are the primary quality attributes within the model:
 
 ![ISO/IEC 25002:2024](25002.png) 
+{% mermaid %}
+flowchart TD
+  A[ISO/IEC 25002:2024 Quality Model]
+  
+  A --> B[Functional Suitability ✅]
+  A --> C[Performance Efficiency ⚡]
+  A --> D[Compatibility 🔗]
+  A --> E[Usability 🖥️]
+  A --> F[Reliability 🔒]
+  A --> G[Security 🔐]
+  A --> H[Maintainability 🔄]
+  A --> I[Portability 🌍]
+  A --> J[Quality in Use ⭐]
+
+  B --> B1[Functional Completeness<br>Functional Correctness<br>Functional Appropriateness]
+  C --> C1[Time Behavior<br>Resource Utilization<br>Capacity]
+  D --> D1[Coexistence<br>Interoperability]
+  E --> E1[Appropriateness Recognizability<br>Learnability<br>Operability<br>User Error Protection<br>User Interface Aesthetics]
+  F --> F1[Maturity<br>Availability<br>Fault Tolerance<br>Recoverability]
+  G --> G1[Confidentiality<br>Integrity<br>Non-repudiation<br>Accountability<br>Authenticity]
+  H --> H1[Modularity<br>Reusability<br>Analyzability<br>Modifiability<br>Testability]
+  I --> I1[Adaptability<br>Installability<br>Replaceability]
+  J --> J1[Effectiveness<br>Efficiency<br>Satisfaction<br>Freedom from Risk]
+{% endmermaid %}
 
 | **Main Attribute**        | **Sub-Characteristics**                                                   |
 |---------------------------|---------------------------------------------------------------------------|
