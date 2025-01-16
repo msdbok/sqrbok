@@ -238,7 +238,7 @@ Robustness Testing. Imagine calamities. The possibilities are endless. How will 
 
 ### White or black box testing?
 
-White box testing
+#### White box testing
 
     Tests what is written, not what was intended
     Knowledge of the implementation helps to  include test cases that may not be identified from specifications alone
@@ -248,7 +248,50 @@ White box testing
 
 ![wb](image-3.png)
 
-Black box testing
+{% mermaid %}
+flowchart LR
+    subgraph WhiteBox["White Box"]
+        direction TB
+        Code["If A then<br>   S1<br>Else<br>   S2<br>Endif  <br>If B then<br>   S3<br>Else<br>   S4<br>Endif"]
+
+        A{{Decision: A?}} -->|True| S1[Statement S1]
+        A -->|False| S2[Statement S2]
+        S2 -->B
+        S1-->B
+        B{{Decision: B?}} -->|True| S3[Statement S3]
+        B -->|False| S4[Statement S4]
+    end
+
+    Input1["Input A"] --> WhiteBox
+    Input2["Input B"] --> WhiteBox
+
+    WhiteBox --> Output1["Output X"]
+    WhiteBox --> Output2["Output Y"]
+{% endmermaid %}
+
+{% mermaid %}
+flowchart TB
+    subgraph WhiteBox["White Box"]
+        direction TB
+        A{{A}}
+        S1[Statement S1]
+        S2[Statement S2]
+        Merge1(( ))
+        Merge2(( ))
+
+        A -->|True| S1
+        A -->|False| S2
+        S1 --> Merge1
+        S2 --> Merge1
+        Merge1 --> Merge2
+    end
+
+    Input1["Input"] --> A
+    Merge2 --> Output1["Output"]
+
+{% endmermaid %}
+
+#### Black box testing
 
     Good for identifying incorrect or missing implementation of stated requirements 
     Test cases can be written by users and technologist alike
