@@ -247,6 +247,7 @@ Finite State Machine
 p2  - error state
 
 {% mermaid %}
+
 stateDiagram-v2
     state P2 <<error>>
     style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
@@ -260,11 +261,12 @@ stateDiagram-v2
 
     P2 --> P2 : lock
     P2 --> P2 : unlock
-{% mermaid %}
+{% endmermaid %}
 
 ![alt text](image.png)
 
 {% mermaid %}
+
 stateDiagram-v2
     state P2 <<error>>
     style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
@@ -298,6 +300,7 @@ stateDiagram-v2
     P2S3 --> P1S0
     P2S1 --> P2S3
     P2S3 --> P2S4 : unlock
+
 {% endmermaid %}
 
 ![alt text](image-1.png)
