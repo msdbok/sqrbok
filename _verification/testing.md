@@ -246,7 +246,7 @@ White box testing
     Can be used to assess precisely what code features remain untested
     On its own, gives no indication of how thoroughly the stated requirements have been tested
 
-    ![wb](image-3.png)
+![wb](image-3.png)
 
 Black box testing
 
@@ -255,9 +255,23 @@ Black box testing
     On its own, gives no indication of how thoroughly the program code has been tested
     Can be used to assess whether any features in the requirements remain untested
 
-    ![bb](image-4.png)
+![bb](image-4.png)
 
+{% mermaid %}
+flowchart LR
+    subgraph BlackBox["Black Box"]
+        direction TB
+        Spec["Specification f(x, y, ...)"]
+    end
 
+    Input1["Input 1"] --> BlackBox
+    Input2["Input 2"] --> BlackBox
+    Input3["Input 3"] --> BlackBox
+
+    BlackBox --> Output1["Output 1"]
+    BlackBox --> Output2["Output 2"]
+    BlackBox --> Output3["Output 3"]
+{% endmermaid %}
 
 
 
