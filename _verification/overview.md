@@ -311,4 +311,58 @@ The initial state, p0, is also marked as an accepting state, by which we express
 
 There are two end states in the product automaton: p2 s4 and p0 s4, but only p0 s4 is accepting. There are also two strongly connected components: C1 = { p0 s0, p1 s1, p1 s2, p0 s3 }, and C2 = { p2 s1, p2 s2, p2 s3, p2 s0 }, only one of which contains accepting states (C1). Any feasible finite path that starts in p0 s 0 and that ends in p2 s 4 would correspond to a violation of the locking property. Similarly, any feasible infinite path that reaches p2 s 1 corresponds to a violation.
 
+## Soundness and completeness
+
+A “sound” static analysis over approximates the behaviors of the program. A sound static analyzer is guaranteed to identify all violations of a property , but may also report some “false alarms", or violations that cannot actually occur
+
+A “complete” static analysis under approximates the behaviors of the program. Any violation of the property  reported by a complete static analyzer corresponds to an actual violation of, but there is no guarantee that all actual violations of  will be reported
+
+
+>No static analysis can be sound, complete, and terminating
+
+Rice’s Theorem says there are inherent limits on what can be
+accomplished by automated analysis of programs
+
+◦ Sound (miss no errors)
+◦ Complete (no false alarms)
+◦ Automatic
+◦ Allow arbitrary (unbounded) memory structures
+◦ Final results
+
+For assurance, we need soundness. When told there are no errors, there must be none → we have to accept false alarms. But the main market for static analysis is bug finding in general-purpose software, where they aim merely to reduce the number of bugs, not to eliminate them. Customers in general will not tolerate many false alarms, so tool vendors give up soundness. Others give up full automation: e.g., require user annotation
+
+Commercial tools (e.g., Coverity, Code Sonar, Fortify, KlocWork, LDRA) are neither sound nor complete. 
+• Pragmatically effective
+• Different tools use different methods, have different capabilities, make different tradeoffs
+
+Lint & Findbugs are pattern matchers (e.g.) are not based on semantics of program execution, neither sound nor complete
+• But pragmatically effective for bug finding
+
+### Techniques and tools
+
+Technics
+Static analysis
+Abstract interpretation
+Model checking 
+Bug patterns
+Data flow analysis
+Formal proofs
+Petri nets
+
+Tools
+Spin
+Java Path Finder
+FindBugs
+JLint
+ESC/Java
+CodeSonar
+PolySpace
+Fortify 360
+Klocwork
+Microsoft’s PREfast & SDV
+PIPE
+
+
+
+
 
