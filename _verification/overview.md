@@ -248,7 +248,8 @@ p2  - error state
 
 {% mermaid %}
 stateDiagram-v2
-    state P2 <<error>> #red
+    state P2 <<error>>
+    style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
 
     [*] --> P0
     P0 --> P1 : lock
@@ -262,4 +263,52 @@ stateDiagram-v2
 {% mermaid %}
 
 ![alt text](image.png)
+
+{% mermaid %}
+stateDiagram-v2
+    state P2 <<error>>
+    style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P2S4 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P1S0 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P2S1 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P2S2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P2S3 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P1S0 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style P1S0 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+
+    [*] --> P0S0
+    P0S0 --> P1S1 : nPackets == nPacketsOld => loc
+    P1S1 --> P1S2 : (request && request->status) => true
+
+    P1S2 --> P0S3
+    P0S3 --> P0S0: nPackets != nPacketsOld => Always false
+
+    P0S3 --> P2S4: unlock => error
+
+    P1S1 --> P1S3 : !(request && request->status) => false
+    P1S3 --> P0S4 : unlock
+    # P0S4 --> [*]
+    P1S3 --> P1S0 : nPackets != nPacketsOld => Always true
+    
+    # error area
+    P1S0 --> P2S1 : lock
+    P2S1 --> P2S2
+    P1S0 --> P2S1 : lock
+    P2S2 --> P2S3 : unlock
+    P2S3 --> P1S0
+    P2S1 --> P2S3
+    P2S3 --> P2S4 : unlock
+{% endmermaid %}
+
+![alt text](image-1.png)
+
+We want to check if this piece of code respects the normal locking discipline that says that it would be an error if a single thread could:
+Attempt to lock a resource for which already holds a lock
+Attempt to unlock a resource when it does not currently hold the lock
+Terminate execution with the lock still in effect
+
+The initial state, p0, is also marked as an accepting state, by which we express that all finite runs that start in p0 should terminate in p0. State p2 is really an error state. Any transition into that state may immediately be flagged as an error.
+
+There are two end states in the product automaton: p2 s4 and p0 s4, but only p0 s4 is accepting. There are also two strongly connected components: C1 = { p0 s0, p1 s1, p1 s2, p0 s3 }, and C2 = { p2 s1, p2 s2, p2 s3, p2 s0 }, only one of which contains accepting states (C1). Any feasible finite path that starts in p0 s 0 and that ends in p2 s 4 would correspond to a violation of the locking property. Similarly, any feasible infinite path that reaches p2 s 1 corresponds to a violation.
+
 
