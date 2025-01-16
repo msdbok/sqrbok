@@ -381,6 +381,16 @@ Klocwork
 Microsoft’s PREfast & SDV
 PIPE
 
+### Limitations
+
+Non-functional verification
+False positives
+False negatives
+Performance/scalability
+
+The price to pay for exhaustive coverage is incompleteness: the analyzer can raise false alarms on some operations that are actually safe. However, if the analyzer deems an operation safe, then this property holds for all possible execution paths.
+
+
 
 
 
