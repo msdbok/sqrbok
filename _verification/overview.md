@@ -261,6 +261,22 @@ stateDiagram-v2
 
     P2 --> P2 : lock
     P2 --> P2 : unlock
+
+    state "P0" as P0
+    note right of P0
+        Unlocked
+    end note
+
+    state "P1" as P1
+    note right of P1
+        Locked
+    end note
+
+    state "P2" as P2
+    note right of P2
+        Error state
+    end note
+
 {% endmermaid %}
 
 ![alt text](image.png)
@@ -268,7 +284,7 @@ stateDiagram-v2
 {% mermaid %}
 
 stateDiagram-v2
-    state P2 <<error>>
+
     style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style P2S4 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style P1S0 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
