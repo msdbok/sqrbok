@@ -271,37 +271,46 @@ flowchart LR
 # Comparing Quality Models
 
 {% mermaid %}
-graph TD
+graph LR
   A[Garvin's Quality Dimensions]
   B[McCall's Quality Factors]
   C[ISO 9126 Quality Characteristics]
 
-  A1[Performance] --> B1[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
-  B1 --> C1[Functionality:<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
+  A --> B
+  B --> C
 
-  A2[Features] --> B2[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
-  B2 --> C2[Functionality:<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
+  A1[Performance] --> B1[Product Operation #40;Functional#41;<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B1 --> C1[Functionality<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
 
-  A3[Reliability] --> B3[Product Operation (Functional):<br>Maturity, Fault Tolerance, Recoverability]
-  B3 --> C3[Reliability:<br>Maturity, Fault Tolerance, Recoverability]
+  A2[Features] --> B2[Product Operation #40;Functional#41;<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B2 --> C2[Functionality<br>Suitability, Accuracy, Interoperability,<br>Compliance, Security]
 
-  A4[Conformance] --> B4[Product Operation (Functional):<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
-  B4 --> C4[Functionality:<br>Compliance]
+  A3[Reliability] --> B3[Product Operation #40;Functional#41;<br>Maturity, Fault Tolerance, Recoverability]
+  B3 --> C3[Reliability<br>Maturity, Fault Tolerance, Recoverability]
 
-  A5[Durability] --> B5[Product Revision (Maintainability):<br>Maintainability, Flexibility, Testability]
-  B5 --> C5[Maintainability:<br>Analyzability, Changeability, Stability, Testability]
+  A4[Conformance] --> B4[Product Operation #40;Functional#41;<br>Correctness, Reliability, Efficiency,<br>Integrity, Usability]
+  B4 --> C4[Functionality<br>Compliance]
 
-  A6[Serviceability] --> B6[Product Revision (Maintainability):<br>Maintainability, Flexibility, Testability]
-  B6 --> C6[Maintainability:<br>Analyzability, Changeability, Stability, Testability]
+  A5[Durability] --> B5[Product Revision #40;Maintainability#41;<br>Maintainability, Flexibility, Testability]
+  B5 --> C5[Maintainability<br>Analyzability, Changeability, Stability, Testability]
 
-  A7[Aesthetics] --> B7[Product Operation (Functional):<br>Usability]
-  B7 --> C7[Usability:<br>Understandability, Learnability,<br>Operability, Attractiveness]
+  A6[Serviceability] --> B6[Product Revision #40;Maintainability#41;<br>Maintainability, Flexibility, Testability]
+  B6 --> C6[Maintainability<br>Analyzability, Changeability, Stability, Testability]
 
-  A8[Perceived Quality] --> B8[Product Transition (Adaptability):<br>Portability, Reusability, Interoperability]
-  B8 --> C8[Portability:<br>Adaptability, Installability,<br>Co-existence, Replaceability]
+  A7[Aesthetics] --> B7[Product Operation #40;Functional#41;<br>Usability]
+  B7 --> C7[Usability<br>Understandability, Learnability,<br>Operability, Attractiveness]
 
-  A9[Efficiency] --> B9[Product Operation (Functional):<br>Efficiency]
-  B9 --> C9[Efficiency:<br>Time Behavior, Resource Utilization,<br>Capacity]
+  A8[Perceived Quality] --> B8[Product Transition #40;Adaptability#41;<br>Portability, Reusability, Interoperability]
+  B8 --> C8[Portability<br>Adaptability, Installability,<br>Co-existence, Replaceability]
+
+  A9[Efficiency] --> B9[Product Operation #40;Functional#41;<br>Efficiency]
+  B9 --> C9[Efficiency<br>Time Behavior, Resource Utilization,<br>Capacity]
+
+%% Styling
+  style A fill:#FFD700,stroke:#000,stroke-width:2px
+  style B fill:#ADD8E6,stroke:#000,stroke-width:2px
+  style C fill:#90EE90,stroke:#000,stroke-width:2px
+
 {% endmermaid %}
 
 | **Garvin's Quality Dimensions** | **McCall's Quality Factors**           | **ISO 9126 Quality Characteristics**      |

@@ -39,7 +39,7 @@ Explore how to manage and assure quality effectively:
 
 ---
 
-### 3. [Verification](/sqrbok/verification/) 📏  
+### 3. [Verification and Validation](/sqrbok/verification/) 📏  
 Learn methods to ensure software reliability and correctness:  
 - Functional testing (Black Box testing)  
 - Structural testing (White Box testing)  
