@@ -115,6 +115,147 @@ sequenceDiagram
     end
 {% endmermaid %}
 
+### Integration testing
+
+Involves two or more interacting units
+Typical faults: Interface misuse and misunderstanding
+The focus is on the adjacent interactions
+Is performed by the developer of the unit being integrated or by a specialized function  
+Defects are usually reported
+Runs in a development environment
+Adequacy measured through node or edge coverage of immediate neighbors
+
+
+> Interface Misuse - A calling unit calls another unit and makes an error in its use of interface, probably by calling/passing parameters in the wrong sequence.
+Interface Misunderstanding - A calling unit makes some assumption about the other unit’s behavior which is incorrect.
+
+{% mermaid %}
+sequenceDiagram
+    actor Customer
+    participant SC as ShoppingCart
+    box "Integration Test"
+        participant O as Order
+        participant I as Item
+    end
+    participant I as Item
+
+    Customer->>SC: Add items and get total
+    SC->>O: Create order
+    O->>I: Get item prices
+    I-->>O: Return item prices
+    O-->>SC: Return total price
+    SC-->>Customer: Display total price
+{% endmermaid %}
+
+
+### Thread, function, integration testing
+
+Involves two or more interacting units
+Focus in end to end functionality
+Is performed by the developer of the unit being integrated or by a specialized function  
+Defects are usually reported
+Runs in a development environment
+
+
+{% mermaid %}
+sequenceDiagram
+    actor Customer
+    box "Function Test"
+        participant SC as ShoppingCart
+        participant O as Order
+        participant I as Item
+    end
+    participant I as Item
+
+    Customer->>SC: Add items and get total
+    SC->>O: Create order
+    O->>I: Get item prices
+    I-->>O: Return item prices
+    O-->>SC: Return total price
+    SC-->>Customer: Display total price
+{% endmermaid %}
+
+### System testing
+
+Encompass end-to-end functionality and other system-level characteristics. 
+Typical faults: Undesirable interactions, negative test cases
+Is not performed by the developer
+Defects are reported
+Runs in a real environment
+Adequacy measured by combinatorial coverage or  mutation testing
+
+
+{% mermaid %}
+sequenceDiagram
+    box "System Test"
+        actor Customer
+        participant SC as ShoppingCart
+        participant O as Order
+        participant I as Item
+    end
+    participant I as Item
+
+    Customer->>SC: Add items and get total
+    SC->>O: Create order
+    O->>I: Get item prices
+    I-->>O: Return item prices
+    O-->>SC: Return total price
+    SC-->>Customer: Display total price
+{% endmermaid %}
+
+
+### Purpose-based testing
+
+What things do we want to test? A non-exhaustive list of the software characteristic being tested
+
+Functions. See that each function does what it’s supposed to do and not what it isn’t supposed to do
+Look for any data processed by the product. Look at outputs as well as inputs
+Decide which particular data to test with. Consider things like boundary values, typical values, convenient values, and invalid values
+Consider combinations of data worth testing together
+
+Regression - Re-testing of something that was already working, usually with existing test cases, to provide confidence that the system under test (SUT) still functions correctly following modification or extension of the system (such as user enhancements or upgrades or following new builds or releases of the software)
+
+
+Scenarios. Test to a compelling story. Do one thing after another
+Define test procedures or high level cases that incorporate multiple activities connected end-to-end 
+Don’t reset the system between tests. 
+Vary timing and ordering of events
+
+Efficiency. Does the system provide appropriate performance, relative to the amount of resources used, under stated conditions
+
+
+Performance testing
+Testing done to evaluate system’s response time, throughput and resource utilization
+Performed under “normal” operating conditions
+
+Load testing
+Process of exercising the system by feeding it the largest  specified task or workload
+
+Stress testing
+Trying to break the system  with the purpose of assuring  that the system fails and recovers gracefully. This testing is performed by overwhelming the system’s resources or by taking them away from it beyond the specified conditions
+
+Robustness Testing. Imagine calamities. The possibilities are endless. How will the system react to them?
+
+### White or black box testing?
+
+White box testing
+
+    Tests what is written, not what was intended
+    Knowledge of the implementation helps to  include test cases that may not be identified from specifications alone
+    Good for discovering additional, perhaps unwanted, functionality, e.g., intrusive or unreachable code
+    Can be used to assess precisely what code features remain untested
+    On its own, gives no indication of how thoroughly the stated requirements have been tested
+
+    ![wb](image-3.png)
+
+Black box testing
+
+    Good for identifying incorrect or missing implementation of stated requirements 
+    Test cases can be written by users and technologist alike
+    On its own, gives no indication of how thoroughly the program code has been tested
+    Can be used to assess whether any features in the requirements remain untested
+
+    ![bb](image-4.png)
 
 
 
