@@ -254,11 +254,11 @@ flowchart LR
         direction TB
         Code["If A then<br>   S1<br>Else<br>   S2<br>Endif  <br>If B then<br>   S3<br>Else<br>   S4<br>Endif"]
 
-        A{{Decision: A?}} -->|True| S1[Statement S1]
+        A{Decision: A?} -->|True| S1[Statement S1]
         A -->|False| S2[Statement S2]
         S2 -->B
         S1-->B
-        B{{Decision: B?}} -->|True| S3[Statement S3]
+        B{Decision: B?} -->|True| S3[Statement S3]
         B -->|False| S4[Statement S4]
     end
 
@@ -269,27 +269,68 @@ flowchart LR
     WhiteBox --> Output2["Output Y"]
 {% endmermaid %}
 
+
+
+##### More about WB
+White Box Testing: Looking at the Code
+
+Design test cases such as
+    All the code statements have been executed
+    Both branches of each condition have been executed
+    All linearly independent paths have been traversed
+
+> To stimulate the program we need inputs, how do we choose them? If we base our selection we might miss unspecified behaviors implemented in the program. If we select values based on the structure we might miss required behaviors that were not implemented. If the condition is not satisfied we will analyze the code to see what values must be provided as input to force the execution along the desired path
+
 {% mermaid %}
+
+---
+config:
+  layout: fixed
+---
 flowchart TB
-    subgraph WhiteBox["White Box"]
-        direction TB
-        A{{A}}
-        S1[Statement S1]
-        S2[Statement S2]
-        Merge1(( ))
-        Merge2(( ))
-
-        A -->|True| S1
-        A -->|False| S2
-        S1 --> Merge1
-        S2 --> Merge1
-        Merge1 --> Merge2
-    end
-
-    Input1["Input"] --> A
-    Merge2 --> Output1["Output"]
+ subgraph Legend["Legend"]
+        Passed["Passed by tests = green"]
+        NotPassed["Not passed by tests = red"]
+  end
+    Start(["Start"]) --> D1{"Decision 1?"}
+    D1 -- True --> S1["Statement S1"]
+    D1 -- False --> S2["Statement S2"]
+    S1 --> D2{"Decision 2?"}
+    S2 --> D3{"Decision 3?"}
+    D2 -- True --> S3["Statement S3"]
+    D2 -- False --> S4["Statement S4"]
+    D3 -- True --> S5["Statement S5"]
+    D3 -- False --> S6["Statement S6"]
+    S3 --> End(["End"])
+    S4 --> End
+    S5 --> S1
+    S6 --> End
+    style Passed fill:#d9fcd9,stroke:#008000,stroke-width:2px
+    style NotPassed fill:#fcd9d9,stroke:#ff0000,stroke-width:2px
+    style Start fill:#f9f9f9,stroke:#000,stroke-width:2px
+    style D1 fill:#f9f9f9,stroke:#000,stroke-width:2px
+    style S1 fill:#d9fcd9,stroke:#008000,stroke-width:2px
+    style S2 fill:#d9fcd9,stroke:#008000,stroke-width:2px
+    style D2 fill:#f9f9f9,stroke:#000,stroke-width:2px
+    style D3 fill:#f9f9f9,stroke:#000,stroke-width:2px
+    style S3 fill:#d9fcd9,stroke:#008000,stroke-width:2px
+    style S4 fill:#fcd9d9,stroke:#ff0000,stroke-width:2px
+    style S5 fill:#d9fcd9,stroke:#008000,stroke-width:2px
+    style S6 fill:#fcd9d9,stroke:#ff0000,stroke-width:2px
+    style End fill:#f9f9f9,stroke:#000,stroke-width:2px
+    linkStyle 0 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 1 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 2 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 3 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 4 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 5 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 6 stroke:#ff0000,stroke-width:2px,fill:none
+    linkStyle 7 stroke:#008000,stroke-width:2px,fill:none
+    linkStyle 8 stroke:#ff0000,stroke-width:2px,fill:none
+    linkStyle 11 stroke:#008000,stroke-width:2px,fill:none
 
 {% endmermaid %}
+
 
 #### Black box testing
 
@@ -315,6 +356,8 @@ flowchart LR
     BlackBox --> Output2["Output 2"]
     BlackBox --> Output3["Output 3"]
 {% endmermaid %}
+
+##### More about BB
 
 
 
