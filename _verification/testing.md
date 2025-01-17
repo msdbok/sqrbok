@@ -359,6 +359,20 @@ flowchart LR
 
 ##### More about BB
 
+Black box testing: looking at the specification
+
+    Identify the software under test
+    Things that the product can do (functions and sub functions).
+    Identify relevant test aspects
+    Values and other attributes of the data
+    Execution conditions
+    Design test cases
+    Decide which particular data to test with. Consider things like boundary values, typical values, convenient values, invalid values, or best representatives
+    Consider combinations of data worth testing together
+    Determine how would you’d know a function is working (expected test result) 
+    Test each function, one at a time. See that each function:
+    Does what it should do AND
+    Does not do what it shouldn’t do
 
 
 
