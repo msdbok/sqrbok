@@ -8,11 +8,16 @@ layout: page
 # Software verification
 
 Purpose
-To establish the  quality levels achieved 
-To justify confidence in the software by
-Demonstrating that it does what it is supposed to do under its stated conditions
-It doesn’t do what is not supposed to do under adverse conditions
-Verification is a continuous process, is not something that happens at the end
+
+    To establish the  quality levels achieved 
+
+    To justify confidence in the software by
+    
+        Demonstrating that it does what it is supposed to do under its stated conditions
+
+        It doesn’t do what is not supposed to do under adverse conditions
+
+    Verification is a continuous process, is not something that happens at the end
 
 
 # Software verification techniques
@@ -75,9 +80,74 @@ Code non-compliances
 Resource usage
 
 
+## Benefits
+
+## Limitations
+
+# 3. Testing
+
+## What is testing?
+
+INCOSE
+
+    The verification method of determining performance by exercising or operating the system or item using instrumentation or special test equipment that is not an integral part of the item being verified. Any analysis of the data recorded in the test and that is needed to verify compliance (such as the application of instrument calibration data) does not require interpretation or interpolation/extrapolation of the test data. 
+
+Software practitioner
+
+    The (more or less) thorough execution of the software with the purpose of finding bugs before the software is released for use and to establish that the software performs as expected
+Uses
+
+    Verification of functional and performance requirements
+
+Examples
+
+    When provided with the correct user name and password the user is able to login into the system
+    The software is capable of handling a load of thousand transactions per minute
 
 
+> When we test something, our purpose is to make it fail. As a matter of fact  a good test case is one that uncovers a fault. Goal is to falsify the property, it is much easier then to prove correctness. 
 
+
+## How tests can be classified? Taxonomy
+
+by Level
+
+    Unit
+    Integration
+    Thread, function, integration, unit, medium
+    System
+
+by Purpose or characteristic being tested
+
+    Functional correctness
+    Robustness
+    Performance
+    Regression
+    Acceptance
+
+by Source of test cases
+
+    Specification (Black box testing)
+    Structure (White box testing)
+    Model based
+    Experience (Exploratory testing)
+
+by Targeted faults
+
+    Computational
+    Domain
+    Variable interactions
+    Value propagations
+    Variable usages
+
+by Test execution mode
+
+    Manual
+    Automated
+
+## Benefits
+
+## Limitations
 
 
 
